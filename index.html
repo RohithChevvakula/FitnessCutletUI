@@ -10,7 +10,7 @@
     <h1 id="main-header">Calorie calculator</h1>
 	<!-- TO-DO:
 		1. Heading summing what is the below content for
-		2. Some content on the screen explaing what is this all about -->
+		2. Some content on the screen explaining what is this all about -->
 
 	<form class="form" id="user-data">
 		<!-- TO-DO : 
@@ -60,7 +60,7 @@
 			event.preventDefault();
 			const formData = new FormData(calForm);
 			const data = Object.fromEntries(formData);
-			fetch('http://18.224.52.79:8080/cal',{
+			fetch('http://localhost:8080/cal',{
 					method : 'POST',
 					headers : {'Content-Type' : 'application/json'},
 					body : JSON.stringify(data)
